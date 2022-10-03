@@ -1,0 +1,224 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Document-wide styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #2D3142;
+    text-align: center;
+    line-height: 1.5em;
+}
+p, a, ul, ol, figcaption, footer {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 0;
+}
+p, a, ul, ol {
+    font-size: 14px;
+}
+a {
+    color: #EF8354;
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+title {
+    font-size: 20px;
+}
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 14px;
+}
+figcaption {
+    font-size: 10px;
+}
+section {
+    width: 100%;
+    min-height: 105vh;
+    background: #FFFFFF;
+    display: inline-block;
+}
+/* Header styling */
+header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    background: #FFFFFF;
+    border-bottom: 5px solid #4F5D75;
+    padding: 0;
+    margin: 0;
+}
+header h1 {
+    margin: auto;
+    margin-right: 1em;
+}
+/* Home section styling */
+#home {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/home_backgroundimage.jpg);
+    background-size: cover;
+}
+#home h2 {
+    padding-top: 45vh;
+    padding-bottom: 2rem;
+}
+#home a {
+    background: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border: 3px solid #2D3142;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px #4F5D75;
+    box-shadow: 5px 5px #4F5D75;
+    padding: 1rem;
+    margin: auto;
+}
+/* About section styling */
+img {
+    width: 40vw;
+    border-radius: 25px;
+}
+#about, #contact {
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 80%;
+    min-height: auto;
+}
+#about h2 {
+    padding-top: 10vh;
+}
+figure {
+    float: left;
+}
+/* Services section styling */
+#services {
+    background-image: url('../images/services_backgroundimage.png');
+    padding-top: 10px;
+}
+#services h2 {
+    margin-top: 7vw;
+}
+#services img {
+    height: 200px;
+    width: 90vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 5vh;
+}
+ul {
+    background: #FFFFFF;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 5vw;
+    -moz-column-gap: 5vw;
+    column-gap: 5vw;
+    text-align: left;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 10vh;
+}
+/* Contact section styling */
+#contact h2 {
+    padding-top: 30vh;
+}
+p img {
+    border-radius: 0;
+    max-width: 1rem;
+    padding-right: 0.5rem;
+}
+a img {
+    max-width: 50px;
+    padding: 0.5rem;
+}
+/* Footer */
+footer {
+    min-height: 12vh;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background: url('../images/services_backgroundimage.png');
+}
+/* Nav bar styling which needs to take precedent over everything else */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-column-count: unset;
+    -moz-column-count: unset;
+    column-count: unset;
+}
+nav ul li {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0;
+    border: 0px solid black;
+}
+/* Formatting for smaller screen resolutions starts here */
+@media only screen and (max-width: 900px) {
+    section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    ul {
+        -webkit-column-count: initial;
+        -moz-column-count: initial;
+        column-count: initial;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    /* About */
+    #about, #contact {
+        width: 95%;
+    }
+    figure {
+        margin: 0;
+    }
+    img {
+        width: 90%;
+    }
+    #about h2 {
+        padding-top: 1em;
+    }
+    /* Services */
+    #services img {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Contact */
+    #contact h2 {
+        padding-top: 1em;
+    }
+    /* Nav */
+    nav {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1em;
+    }
+    nav ul li {
+        padding: 0.5em;
+    }
+}
