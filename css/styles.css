@@ -87,6 +87,7 @@ header h1 {
     padding: 1rem;
     margin: auto;
     margin-top: 0;
+    white-space: nowrap;
 }
 /* About section styling */
 img {
